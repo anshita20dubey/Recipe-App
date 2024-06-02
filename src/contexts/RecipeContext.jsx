@@ -1,6 +1,6 @@
 import { createContext, useState } from "react";
 
-export const recipeContext = createContext(null);
+export const recipecontext = createContext(null);
 
 const RecipeContext = (props) => {
   const [recipes, setrecipes] = useState([
@@ -17,9 +17,9 @@ const RecipeContext = (props) => {
     },
   ]);
   return (
-    <recipeContext.Provider value={[recipes,setrecipes]}>
+    <recipecontext.Provider value={[recipes,setrecipes]}>
         {props.children}
-    </recipeContext.Provider>
+    </recipecontext.Provider>
   )
 }
 

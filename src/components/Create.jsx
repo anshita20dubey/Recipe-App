@@ -1,12 +1,12 @@
 import React, { useState, useContext } from "react";
 import { nanoid } from "nanoid";
-import {recipeContext } from "../contexts/RecipeContext";
+import {recipecontext } from "../contexts/RecipeContext";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
 const Create = () => {
     const navigate = useNavigate();
-    const [recipes,setrecipes] = useContext(recipeContext);
+    const [recipes,setrecipes] = useContext(recipecontext);
     const [image, setimage] = useState("");
     const [title, settitle] = useState("");
     const [description, setdescription] = useState("");
