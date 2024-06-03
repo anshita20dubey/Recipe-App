@@ -25,6 +25,7 @@ const Create = () => {
         };
         // Code to validate the input fields
         setrecipes([...recipes,newRecipe]);
+        localStorage.setItem("recipes", JSON.stringify([...recipes,newRecipe]));
         toast.success("Recipe Created Successfully");
         navigate("/recipes");
     };
